@@ -6,15 +6,15 @@ from pprint import pprint
 # 시행횟수
 T = int(input())
 
-# 배경
-bg_data = [[0]*10 for i in range(10)]
+
 #print(bg_data)
 
 for t in range(1,T+1):
     # 색칠 횟수 받아오기
     N = int(input())
     # N만큼 반복
-    
+    # 배경
+    bg_data = [[0]*10 for i in range(10)]
     #색칠한 범위
     min_location = [10,10]
     max_location = [0,0]
