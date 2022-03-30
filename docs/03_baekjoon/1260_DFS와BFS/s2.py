@@ -4,7 +4,6 @@ sys.stdin = open('input.txt', 'r')
 
 # stack 사용
 def dfs_2(graph, v):
-    global visited
     stack = [v]
     result = []
     # 더이상 갈곳이없을경우
