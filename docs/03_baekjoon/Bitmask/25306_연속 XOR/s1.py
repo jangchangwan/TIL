@@ -14,6 +14,7 @@ def computeXOR(n):
 def xorSum(a,b):
     return computeXOR(a-1) ^ computeXOR(b)
 
-
-A, B = map(int, input().split())
-print(xorSum(A, B))
+T = int(input())
+for tc in range(T):
+    A, B = map(int, input().split())
+    print(xorSum(A, B))
