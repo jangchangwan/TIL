@@ -23,7 +23,7 @@ module.exports = {
         arrowParens: 'avoid',
       },
     ],
-    '@typescript-eslint/no-explicit-any': 'off',
+    // '@typescript-eslint/no-explicit-any': 'off',
     'prefer-const': 'off',
   },
   parserOptions: {
