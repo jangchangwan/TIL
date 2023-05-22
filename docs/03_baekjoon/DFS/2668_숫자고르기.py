@@ -1,4 +1,3 @@
-# dfs 정의
 def dfs(first, second, num):
     first.add(num)
     second.add(arr[num])
@@ -18,7 +17,6 @@ answer = set()
 
 
 
-# dfs 실행
 for i in range(1, N+1):
     if i not in answer:
         dfs(set(), set(), i)
