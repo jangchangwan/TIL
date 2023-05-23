@@ -10,9 +10,7 @@ def BFS(sr, sc):
     while front != rear:
         front += 1
         r, c = queue[front]
-        print(r, c)
         for d in range(4):
-            print(d)
             nr = r + dr[d]
             nc = c + dc[d]
             # 좌표 범위 내  and  색칠한 부위 x  and 방문한 곳 x
@@ -43,7 +41,6 @@ for tc in range(TC):
 for i in range(N):
     for j in range(M):
         if arr[i][j] == 0 and visited[i][j] == 0:
-            print("진입 좌표 : ", i, j )
             ans = BFS(i, j)
             answer.append(ans)
             count += 1
