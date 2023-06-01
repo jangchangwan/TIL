@@ -21,4 +21,3 @@ for i in range(2, 17):
     answer.append(int(base*base))
     
 print(answer[N+1])
-
