@@ -30,15 +30,15 @@
 
 num_list = [int(input()) for _ in range(7)]
 
-odd_set= set()
+odd_list= list()
 
 for i in range(0, 7):
     if num_list[i] % 2:
-        odd_set.add(num_list[i])
+        odd_list.append(num_list[i])
 
-if len(odd_set):
-    print(sum(list(odd_set)))
-    print(min(list(odd_set)))
-    
+if len(odd_list):
+    print(sum(odd_list))
+    print(min(odd_list))
+  
 else:
     print(-1)
