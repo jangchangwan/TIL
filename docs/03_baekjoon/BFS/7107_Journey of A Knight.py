@@ -29,7 +29,7 @@ def BFS():
                 arr[nr][nc] = arr[r][c] + 1
                 rear += 1
         
-    return "NEVER"
+    return "NEVAR"
     
 dir = [(-1, 2), (-2, 1), (1, 2), (2, 1), (1, -2), (2, -1), (-1, -2),(-2, -1)]
 
