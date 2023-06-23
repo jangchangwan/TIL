@@ -21,7 +21,8 @@
 # 평균을 구해서
 # 평균 이상만 카운팅해서
 # 평균 이상 사람 수 / 총 사람 수
-
+def roundTraditional(val, digits):
+    return round(val+10**(-len(str(val))-1), digits)
 
 C = int(input())
 
@@ -38,7 +39,7 @@ for c in range(C):
         if score > ave_score:
             total_cnt += 1
     
-    print('{:.3f}%'.format(total_cnt/scores[0]*100))
+    print('{:.3f}%'.format(roundTraditional(total_cnt/scores[0]*100,3)))
 
 
     
