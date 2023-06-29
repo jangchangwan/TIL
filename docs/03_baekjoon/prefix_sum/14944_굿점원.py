@@ -8,7 +8,6 @@ for i in range(1, N+1):
     prefix_sum_distance[i] = prefix_sum_distance[i-1] + distance[i-1]
 
 
-print(prefix_sum_distance)
 for _ in range(M):
     start, end, dis = map(int, input().split())
     if start > end:
@@ -21,6 +20,5 @@ for _ in range(M):
     answer = min(answer, dis * 2 + (prefix_sum_distance[N] - prefix_sum_distance[end]) * 2 + prefix_sum_distance[end - 1])
     answer = min(answer, prefix_sum_distance[end] + dis + prefix_sum_distance[N] - prefix_sum_distance[start])
     answer = min(answer, dis * 2 + prefix_sum_distance[N])
-    print(start, end)
     
 print(answer)
