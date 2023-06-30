@@ -2,6 +2,7 @@ def GCD(a, b):
     while b > 0:
         a, b = b, a % b
     return a
+
   
 def GAD(num):
     divisors = list()
@@ -13,8 +14,8 @@ def GAD(num):
     divisors.sort()
     return divisors
 
-A, B = map(int, input().split())
 
+A, B = map(int, input().split())
 
 num_list = GAD(GCD(A, B))
 
